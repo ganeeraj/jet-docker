@@ -18,7 +18,7 @@ COPY nginx/nginx.conf /etc/nginx/nginx.conf
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY website /usr/share/nginx/html
 
-chmod a+r /usr/share/nginx/html/index.html
+RUN chmod a+r /usr/share/nginx/html/index.html
 
 # Expose ports
 EXPOSE 80
